@@ -78,8 +78,9 @@
     <ItemGroup>
         <Compile Include="MissingInteger\MissingInteger.cs" />
         <Compile Include="MissingInteger\MissingIntegerTest.cs" />
-        <Compile Include="Tests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="NumberOf1Bits\NumberOf1Bits.cs" />
+        <Compile Include="NumberOf1Bits\NumberOf1BitsTest.cs" />
         <Compile Include="ThreeLetters\ThreeLettersTest.cs" />
         <Compile Include="ThreeLetters\ThreeLetters.cs" />
     </ItemGroup>
