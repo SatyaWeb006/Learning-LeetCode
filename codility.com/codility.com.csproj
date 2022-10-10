@@ -80,6 +80,8 @@
         <Compile Include="MissingInteger\MissingIntegerTest.cs" />
         <Compile Include="Tests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="ThreeLetters\ThreeLettersTest.cs" />
+        <Compile Include="ThreeLetters\ThreeLetters.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />
