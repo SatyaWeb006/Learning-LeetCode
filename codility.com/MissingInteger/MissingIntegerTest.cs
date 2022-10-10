@@ -3,10 +3,10 @@ using System.Diagnostics;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace codility.com.Task1
+namespace codility.com.MissingInteger
 {
     [TestFixture]
-    public class TwoSumTest
+    public class MissingInteger
     {
         [TestCase(new int[] {1, 3, 6, 4, 1, 2}, 5)]
         [TestCase(new int[] {1,2,3},  4)]

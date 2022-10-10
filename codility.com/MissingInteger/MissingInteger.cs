@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace codility.com.Task1
+namespace codility.com.MissingInteger
 {
     // you can also use other imports, for example:
     // using System.Collections.Generic;
