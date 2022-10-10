@@ -6,7 +6,7 @@ using NUnit.Framework;
 namespace codility.com.MissingInteger
 {
     [TestFixture]
-    public class MissingInteger
+    public class MissingIntegerTest
     {
         [TestCase(new int[] {1, 3, 6, 4, 1, 2}, 5)]
         [TestCase(new int[] {1,2,3},  4)]
