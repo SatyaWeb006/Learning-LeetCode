@@ -18,7 +18,7 @@ namespace LeetCode.com.Two_Sum
         /// <param name="nums"></param>
         /// <param name="target"></param>
         /// <returns></returns>
-        public  int[] TwoSum(int[] nums, int target)
+        public int[] TwoSum(int[] nums, int target)
         {
             return null;
         }
