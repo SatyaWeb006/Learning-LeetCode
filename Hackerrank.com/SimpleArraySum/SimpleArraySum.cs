@@ -36,9 +36,10 @@ public static class Result
      * The function accepts INTEGER_ARRAY ar as parameter.
      */
 
-    public static int simpleArraySum(List<int> ar)
+    public static int SimpleArraySum(List<int> ar)
     {
-        return 0;
+        var result = ar.Sum();
+        return result;
     }
 }
 
@@ -53,7 +54,7 @@ class Solution
         List<int> ar = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arTemp => Convert.ToInt32(arTemp))
             .ToList();
 
-        int result = Result.simpleArraySum(ar);
+        int result = Result.SimpleArraySum(ar);
 
         textWriter.WriteLine(result);
 

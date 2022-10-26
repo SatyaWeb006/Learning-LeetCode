@@ -14,7 +14,7 @@ namespace Hackerrank.com.Test.SimpleArraySum.Test
         public void Example1(int length, int[] arrInt, int assert)
         {
             var time = Stopwatch.StartNew();
-            var result = Result.simpleArraySum(arrInt.ToList());
+            var result = Result.SimpleArraySum(arrInt.ToList());
             time.Stop();
             var times = time.ElapsedMilliseconds;
 
