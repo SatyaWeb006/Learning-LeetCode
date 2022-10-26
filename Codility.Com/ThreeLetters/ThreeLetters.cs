@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace codility.com.ThreeLetters
+namespace Codility.Com.ThreeLetters
 {
     public class Solution
     {

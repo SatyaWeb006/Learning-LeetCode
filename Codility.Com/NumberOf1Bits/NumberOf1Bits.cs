@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace codility.com.NumberOf1Bits
+﻿namespace Codility.Com.NumberOf1Bits
 {
     public class Solution
     {

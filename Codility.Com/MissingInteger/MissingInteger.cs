@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace codility.com.MissingInteger
+﻿namespace Codility.Com.MissingInteger
 {
     // you can also use other imports, for example:
     // using System.Collections.Generic;

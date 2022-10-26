@@ -1,9 +1,8 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace codility.com.MissingInteger
+namespace Codility.Com.MissingInteger
 {
     [TestFixture]
     public class MissingIntegerTest

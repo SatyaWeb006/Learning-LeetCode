@@ -1,23 +1,20 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using FluentAssertions;
+using Hackerrank.com.SimpleArraySum;
 using NUnit.Framework;
 
 // ReSharper disable StringLiteralTypo
 
-namespace codility.com.ThreeLetters
+namespace Hackerrank.com.Test.SimpleArraySum.Test
 {
     [TestFixture]
     public class ThreeLettersTest
     {
-        [TestCase("baaaaa", 1)]
-        [TestCase("baaabbaabbba", 2)]
-        [TestCase("baabab", 0)]
-        public void Example1(string nums, int assert)
+        [TestCase(6, new int[] {1, 2, 3, 4, 10, 11}, 31)]
+        public void Example1(int length, int[] arrInt, int assert)
         {
             var time = Stopwatch.StartNew();
-            var answer = new Solution();
-            var result = answer.solution(nums);
+            var result = Result.simpleArraySum(arrInt.ToList());
             time.Stop();
             var times = time.ElapsedMilliseconds;
 
