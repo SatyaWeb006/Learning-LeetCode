@@ -1,20 +1,19 @@
 ﻿using System.Diagnostics;
 using FluentAssertions;
-using Hackerrank.com.SimpleArraySum;
 using NUnit.Framework;
 
 // ReSharper disable StringLiteralTypo
 
-namespace Hackerrank.com.Test.SimpleArraySum.Test
+namespace Hackerrank.com.Test.DiagonalDifference.Test
 {
     [TestFixture]
-    public class SimpleArraySumTest
+    public class DiagonalDifferenceTest
     {
-        [TestCase(6, new int[] {1, 2, 3, 4, 10, 11}, 31)]
-        public void Example1(int length, int[] arrInt, int assert)
+        [TestCase(5, new long[] {1000000001, 1000000002, 1000000003, 1000000004, 1000000005}, 5000000015)]
+        public void Example1(int length, long[] arrLong, long assert)
         {
             var time = Stopwatch.StartNew();
-            var result = Result.SimpleArraySum(arrInt.ToList());
+            var result = Hackerrank.com.DiagonalDifference.Result.AVeryBigSum(arrLong.ToList());
             time.Stop();
             var times = time.ElapsedMilliseconds;
 
