@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace LeetCode.com.Two_Sum
+﻿namespace LeetCode.com._00001_Two_Sum
 {
     /// <summary>
     ///     Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
