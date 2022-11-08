@@ -2,7 +2,7 @@
 using FluentAssertions;
 using NUnit.Framework;
 
-namespace LeetCode.com.BinarySearch
+namespace LeetCode.com._00704_BinarySearch
 {
     [TestFixture]
     public class BinarySearchTest
