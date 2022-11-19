@@ -22,18 +22,23 @@
                 return false;
             }
 
-            int maxIndex = input.Count();
-            for (int i = 0; i < maxIndex/2 ; i++)
+            if (input.Length == 1)
             {
-                if (input[i] == input[maxIndex])
-                {
-                    maxIndex--;
-                    continue;
-                }
-                
-                
+                return true;
             }
-            
+
+            var maxIndex = input.Length;
+            var minIndex = 0;
+
+            //  確認陣列的邊界
+            while ((maxIndex-1) - minIndex >= 1)
+            {
+                //  當前陣列最大與最小比對
+                if (input[minIndex] != input[maxIndex - 1]) return false;
+                //  index 往後往錢
+                minIndex++;
+                maxIndex--;
+            }
             
             return true;
         }
