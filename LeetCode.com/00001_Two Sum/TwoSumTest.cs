@@ -21,7 +21,7 @@ namespace LeetCode.com._00001_Two_Sum
             var times = time.ElapsedMilliseconds;
             Console.WriteLine(time.ElapsedMilliseconds);
             result.Should().BeEquivalentTo(assert, "預期結果不一致。");
-            times.Should().BeLessThan(1000);
+            times.Should().BeLessThan(3000);
         }
     }
 }
