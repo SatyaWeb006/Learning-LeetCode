@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackerrank.com", "Hackerran
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGorilla.com", "TestGorilla.com\TestGorilla.com.csproj", "{ACEB8D59-2DE5-4D71-8858-EE887881F357}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineInterview", "OnlineInterview\OnlineInterview.csproj", "{35619299-DBD9-45D2-B8FC-E328D2E3466A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineInterviewTest", "OnlineInterviewTest\OnlineInterviewTest.csproj", "{995AE258-936B-48C0-B668-2462E2B996E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{ACEB8D59-2DE5-4D71-8858-EE887881F357}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACEB8D59-2DE5-4D71-8858-EE887881F357}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACEB8D59-2DE5-4D71-8858-EE887881F357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35619299-DBD9-45D2-B8FC-E328D2E3466A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35619299-DBD9-45D2-B8FC-E328D2E3466A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35619299-DBD9-45D2-B8FC-E328D2E3466A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35619299-DBD9-45D2-B8FC-E328D2E3466A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{995AE258-936B-48C0-B668-2462E2B996E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{995AE258-936B-48C0-B668-2462E2B996E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{995AE258-936B-48C0-B668-2462E2B996E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{995AE258-936B-48C0-B668-2462E2B996E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
