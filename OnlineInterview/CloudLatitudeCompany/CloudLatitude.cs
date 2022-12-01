@@ -54,28 +54,23 @@
             //  違反了OCP原則 
             //  新增一個數值都要改2個地方。
             //  應該思考有沒有辦法只新增一個地方。
-            
-            var isThree = i % 3 == 0;
-            var isFive = i % 5 == 0;
-            var isSeven = i % 7 == 0;
-
             var tmpStr = string.Empty;
+            var dic = new Dictionary<int, string>()
+            {
+                {3, "fizz"},
+                {5, "buzz"},
+                {7, "dizz"},
+                //11
+            };
+
+            foreach (var keyValue in dic)
+            {
+                if (i % keyValue.Key == 0)
+                {
+                    tmpStr += keyValue.Value;
+                }
+            }
             
-            if (isThree)
-            {
-                tmpStr += "fizz";
-            }
-
-            if (isFive)
-            {
-                tmpStr += "buzz";
-            }
-
-            if (isSeven)
-            {
-                tmpStr += "dizz";
-            }
-
             return string.IsNullOrEmpty(tmpStr) ? i.ToString() : tmpStr;
         }
     }
