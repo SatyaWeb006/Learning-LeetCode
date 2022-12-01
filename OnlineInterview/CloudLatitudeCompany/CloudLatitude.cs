@@ -6,29 +6,73 @@
     public class CloudLatitude
     {
         /// <summary>
-        ///     暴力解法，
-        ///     但是有部分的效能耗損在重複的資料比對上，10000筆資料大約2735~2780ms
-        ///     EX 如果今天陣列長度為100，
-        ///     比對道地50筆資料的時候，前面的0~50是可以不用重複比較的，但是51後需要從第一筆開始比對。
+        ///   需求
+        ///     第一階段
+        ///         一個input 正整數，排除負值、0。 
+        ///         回傳一個字串 數字1空格2空格3
+        ///         input 5 => 「1 2 3 4 5」
+        ///     第二階段
+        ///         3或3的倍數不要印數字改成fizz
+        ///
+        ///     第三階段
+        ///         5或5的倍數 輸出 buzz
+        ///         共同倍數 fizzbuzz
+        ///
+        ///     第四階段
+        ///         7或7的倍數 輸出 dizz
+        ///         共同倍數 fizzbuzzdizz
         /// </summary>
         /// <param name="nums"></param>
-        /// <param name="target"></param>
         /// <returns></returns>
-        public static int[] TwoSum_暴力解(int[] nums, int target)
+        public static string SomeMethod(int nums)
         {
-            foreach (var eOne in nums.Select((value, i) => new {i, value}))
+            var dataList = new List<string>();
+
+            for (int i = 1; i <= nums; i++)
             {
-                foreach (var eTwo in nums.Select((value, i) => new {i, value}))
-                {
-                    if (eOne.i == eTwo.i || target != (eOne.value + eTwo.value)) continue;
-                    //  Console.WriteLine($"index  : One : {eOne.i}, Two : {eTwo.i}");
-                    //  Console.WriteLine($"target : {target}, One : {eOne.value}, Two : {eTwo.value}");
-                    //  Console.WriteLine($"Answer : One : {eOne.i}, Two : {eTwo.i}");
-                    return new int[] {eOne.i, eTwo.i};
-                }
+                dataList.Add(OutputString(i));
             }
 
-            return null;
+            var result = string.Join(" ", dataList);
+            return result;
+        }
+
+        /// <summary>
+        /// 
+        ///         3跟3的倍數不要印，fizz
+        ///
+        ///         5 或5的倍數 輸出 buzz
+        ///         共同倍數 fizzbuzz
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
+        private static string OutputString(int i)
+        {
+            //  重構 => 維護的阻礙
+            //  1. 參數過多會不斷的增長
+            //  2. tmpStr 的行為是固定模式
+            var isThree = i % 3 == 0;
+            var isFive = i % 5 == 0;
+            var isSeven = i % 7 == 0;
+
+            var tmpStr = string.Empty;
+            
+            if (isThree)
+            {
+                tmpStr += "fizz";
+            }
+
+            if (isFive)
+            {
+                tmpStr += "buzz";
+            }
+
+            if (isSeven)
+            {
+                tmpStr += "dizz";
+            }
+
+            return string.IsNullOrEmpty(tmpStr) ? i.ToString() : tmpStr;
         }
     }
 }
