@@ -17,4 +17,10 @@
         <PackageReference Include="coverlet.collector" Version="3.1.2" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Update="00344_ReverseString\ReverseStringTest.Data.cs">
+        <DependentUpon>ReverseStringTest.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
 </Project>
