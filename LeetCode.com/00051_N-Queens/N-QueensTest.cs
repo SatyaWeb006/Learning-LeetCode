@@ -23,13 +23,8 @@ namespace LeetCode.com._00051_N_Queens
         [TestCaseSource(nameof(CreateCheckerBoard))]
         public void CreateCheckerBoardTest(int nums, Dictionary<string, bool> assert)
         {
-            var time = Stopwatch.StartNew();
             var result = Solution.CreateCheckerBoard(nums);
-            time.Stop();
-            var times = time.ElapsedMilliseconds;
-            Console.WriteLine(time.ElapsedMilliseconds);
             result.Should().BeEquivalentTo(assert, "預期結果不一致。");
-            times.Should().BeLessThan(3000);
         }
 
      

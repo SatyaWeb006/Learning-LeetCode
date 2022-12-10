@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Text;
 
 namespace LeetCode.com._00051_N_Queens
 {
@@ -24,6 +25,7 @@ namespace LeetCode.com._00051_N_Queens
             return null;
         }
 
+
         /// <summary>
         ///     建立空棋盤
         /// </summary>
@@ -32,7 +34,17 @@ namespace LeetCode.com._00051_N_Queens
         /// <exception cref="NotImplementedException"></exception>
         public static Dictionary<string, bool> CreateCheckerBoard(int range)
         {
-            throw new NotImplementedException();
+            var result = new Dictionary<string, bool>();
+            for (var row = 1; row <= range; row++)
+            {
+                for (var col = 1; col <= range; col++)
+                {
+                    var key = $"{col},{row}";
+                    result[key] = true;
+                }
+            }
+
+            return result;
         }
     }
 }
