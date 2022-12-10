@@ -21,6 +21,9 @@
       <Compile Update="00344_ReverseString\ReverseStringTest.Data.cs">
         <DependentUpon>ReverseStringTest.cs</DependentUpon>
       </Compile>
+      <Compile Update="00051_N-Queens\N-QueensTest.Data.cs">
+        <DependentUpon>N-QueensTest.cs</DependentUpon>
+      </Compile>
     </ItemGroup>
 
 </Project>

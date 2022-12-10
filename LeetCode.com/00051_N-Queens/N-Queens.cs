@@ -7,7 +7,7 @@ namespace LeetCode.com._00051_N_Queens
     ///     Given an integer n, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.
     ///     Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space, respectively.
     /// </summary>
-    public  class Solution
+    public class Solution
     {
         /// <summary>
         ///     解題思路 : https://www.notion.so/syuantsai/2a52eed4b34f4e00a1e49e96a66f6963
@@ -22,6 +22,17 @@ namespace LeetCode.com._00051_N_Queens
             // 5. 修正為，正確的結果可以直接反過來使用，但該怎麼紀錄使用？
             // 6. 可以在每次檢查殘餘的空見是否足夠放Queen來提升效率。
             return null;
+        }
+
+        /// <summary>
+        ///     建立空棋盤
+        /// </summary>
+        /// <param name="range"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
+        public static Dictionary<string, bool> CreateCheckerBoard(int range)
+        {
+            throw new NotImplementedException();
         }
     }
 }
