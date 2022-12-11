@@ -28,9 +28,9 @@ namespace LeetCode.com._00051_N_Queens
 
         
         [TestCaseSource(nameof(QueensExclusionArea))]
-        public void QueenPlacingTest(string place, Dictionary<string,bool> assert)
+        public void QueenPlacingTest(string place, int boardSize, Dictionary<string,bool> assert)
         {
-            var result = Solution.QueenPlacingExclusionArea(place);
+            var result = Solution.QueenPlacingExclusionArea(place, boardSize);
 
             result.Should().BeEquivalentTo(assert, "預期結果不一致");
         }

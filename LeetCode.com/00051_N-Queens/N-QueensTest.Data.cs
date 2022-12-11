@@ -45,7 +45,7 @@ namespace LeetCode.com._00051_N_Queens
             get
             {
                 yield return
-                    new TestCaseData("1,1", new List<string>()
+                    new TestCaseData("1,1", 4, new List<string>()
                     {
                         "1,1","1,2","1,3","1,4",
                         "2,1","2,2",
@@ -54,7 +54,7 @@ namespace LeetCode.com._00051_N_Queens
                     });
                 
                 yield return
-                    new TestCaseData("2,3", new List<string>()
+                    new TestCaseData("2,3", 4, new List<string>()
                     {
                         
                               "1,2","1,3","1,4",

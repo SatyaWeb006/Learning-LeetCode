@@ -48,7 +48,7 @@ namespace LeetCode.com._00051_N_Queens
             return result;
         }
 
-        public static Dictionary<string,bool> QueenPlacingExclusionArea(string place)
+        public static Dictionary<string,bool> QueenPlacingExclusionArea(string place, int range)
         {
             throw new NotImplementedException();
         }
