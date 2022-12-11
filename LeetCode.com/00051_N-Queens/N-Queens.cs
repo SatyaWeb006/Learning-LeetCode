@@ -55,7 +55,8 @@ namespace LeetCode.com._00051_N_Queens
         /// <exception cref="NotImplementedException"></exception>
         public static Dictionary<string,bool> AreaFilter(Dictionary<string, bool> area, Dictionary<string, bool> queen)
         {
-            throw new NotImplementedException();
+            var result = area.Except(queen).ToDictionary(x => x.Key, _ => true);
+            return result;
         }
         
         
