@@ -5,6 +5,67 @@ namespace LeetCode.com._00051_N_Queens
     [TestFixture]
     public partial class SolveNQueensTest
     {
+        
+        #region 可用空間刪去
+
+        static IEnumerable<TestCaseData> AreaDiff
+        {
+            get
+            {
+                yield return
+                    new TestCaseData(
+                        new Dictionary<string,bool>()
+                        {
+                            {"1,1", true},	{"1,2", true},	{"1,3", true},	{"1,4", true},
+                            {"2,1", true},	{"2,2", true},	{"2,3", true},	{"2,4", true},
+                            {"3,1", true},	{"3,2", true},	{"3,3", true},	{"3,4", true},
+                            {"4,1", true},	{"4,2", true},	{"4,3", true},	{"4,4", true},
+                        },
+                        new Dictionary<string,bool>()
+                        {
+                            {"1,1", true},	{"1,2", true},	{"1,3", true},	{"1,4", true},
+                            {"2,1", true},	{"2,2", true},	{"2,3", true},	{"2,4", true},
+                        }
+                        ,new Dictionary<string,bool>()
+                        {
+                            {"3,1", true},	{"3,2", true},	{"3,3", true},	{"3,4", true},
+                            {"4,1", true},	{"4,2", true},	{"4,3", true},	{"4,4", true},
+                        }
+                        );
+
+                yield return
+                    new TestCaseData(
+                        new Dictionary<string,bool>()
+                        {
+                            {"1,1", true},	{"1,2", true},	{"1,3", true},	{"1,4", true},	{"1,5", true},	{"1,6", true},	{"1,7", true},
+                            {"2,1", true},	{"2,2", true},	{"2,3", true},	{"2,4", true},	{"2,5", true},	{"2,6", true},	{"2,7", true},
+                            {"3,1", true},	{"3,2", true},	{"3,3", true},	{"3,4", true},	{"3,5", true},	{"3,6", true},	{"3,7", true},
+                            {"4,1", true},	{"4,2", true},	{"4,3", true},	{"4,4", true},	{"4,5", true},	{"4,6", true},	{"4,7", true},
+                            {"5,1", true},	{"5,2", true},	{"5,3", true},	{"5,4", true},	{"5,5", true},	{"5,6", true},	{"5,7", true},
+                            {"6,1", true},	{"6,2", true},	{"6,3", true},	{"6,4", true},	{"6,5", true},	{"6,6", true},	{"6,7", true},
+                            {"7,1", true},	{"7,2", true},	{"7,3", true},	{"7,4", true},	{"7,5", true},	{"7,6", true},	{"7,7", true},
+
+                        },
+                        new Dictionary<string,bool>()
+                        {
+                            {"3,1", true},	{"3,2", true},	{"3,3", true},	{"3,4", true},	{"3,5", true},	{"3,6", true},	{"3,7", true},
+                            {"4,1", true},	{"4,2", true},	{"4,3", true},	{"4,4", true},	{"4,5", true},	{"4,6", true},	{"4,7", true},
+                            {"7,1", true},	{"7,2", true},	{"7,3", true},	{"7,4", true},	{"7,5", true},	{"7,6", true},	{"7,7", true},
+
+                        }
+                        ,new Dictionary<string,bool>()
+                        {
+                            {"1,1", true},	{"1,2", true},	{"1,3", true},	{"1,4", true},	{"1,5", true},	{"1,6", true},	{"1,7", true},
+                            {"2,1", true},	{"2,2", true},	{"2,3", true},	{"2,4", true},	{"2,5", true},	{"2,6", true},	{"2,7", true},
+                            {"5,1", true},	{"5,2", true},	{"5,3", true},	{"5,4", true},	{"5,5", true},	{"5,6", true},	{"5,7", true},
+                            {"6,1", true},	{"6,2", true},	{"6,3", true},	{"6,4", true},	{"6,5", true},	{"6,6", true},	{"6,7", true},
+                        }
+                    );
+            }
+        }
+
+        #endregion
+        
         #region 答案測試
 
         static IEnumerable<TestCaseData> SolveNQueens
@@ -36,7 +97,6 @@ namespace LeetCode.com._00051_N_Queens
         }
 
         #endregion
-
         
         #region 答案測試
 

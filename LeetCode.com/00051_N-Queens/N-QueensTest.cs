@@ -26,12 +26,22 @@ namespace LeetCode.com._00051_N_Queens
             result.Should().BeEquivalentTo(assert, "預期結果不一致。");
         }
 
-        
         [TestCaseSource(nameof(QueensExclusionArea))]
         public void QueenPlacingTest(string place, int boardSize, Dictionary<string,bool> assert)
         {
             var result = Solution.QueenPlacingExclusionArea(place, boardSize);
 
+            result.Should().BeEquivalentTo(assert, "預期結果不一致");
+        }
+        
+        
+        [TestCaseSource(nameof(AreaDiff))]
+        public void AreaFilterTest(
+            Dictionary<string, bool> area,
+            Dictionary<string, bool> queen,
+            Dictionary<string, bool> assert)
+        {
+            var result = Solution.AreaFilter(area, queen);
             result.Should().BeEquivalentTo(assert, "預期結果不一致");
         }
     }

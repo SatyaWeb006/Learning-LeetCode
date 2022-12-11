@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Xml;
+﻿using System.Drawing;
 
 namespace LeetCode.com._00051_N_Queens
 {
@@ -51,6 +47,18 @@ namespace LeetCode.com._00051_N_Queens
             return result;
         }
 
+        /// <summary>
+        ///     去除被Queen所封禁的座標
+        /// </summary>
+        /// <param name="area"></param>
+        /// <param name="queen"></param>
+        /// <exception cref="NotImplementedException"></exception>
+        public static Dictionary<string,bool> AreaFilter(Dictionary<string, bool> area, Dictionary<string, bool> queen)
+        {
+            throw new NotImplementedException();
+        }
+        
+        
         /// <summary>
         ///     計算出每個皇后所封禁的座標
         /// </summary>
@@ -124,5 +132,6 @@ namespace LeetCode.com._00051_N_Queens
 
             return true;
         }
+
     }
 }
