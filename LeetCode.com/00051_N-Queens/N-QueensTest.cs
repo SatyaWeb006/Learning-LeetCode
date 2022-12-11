@@ -19,7 +19,6 @@ namespace LeetCode.com._00051_N_Queens
             times.Should().BeLessThan(3000);
         }
 
-
         [TestCaseSource(nameof(CreateCheckerBoard))]
         public void CreateCheckerBoardTest(int nums, Dictionary<string, bool> assert)
         {
@@ -27,6 +26,13 @@ namespace LeetCode.com._00051_N_Queens
             result.Should().BeEquivalentTo(assert, "預期結果不一致。");
         }
 
-     
+        
+        [TestCaseSource(nameof(QueensExclusionArea))]
+        public void QueenPlacingTest(string place, Dictionary<string,bool> assert)
+        {
+            var result = Solution.QueenPlacingExclusionArea(place);
+
+            result.Should().BeEquivalentTo(assert, "預期結果不一致");
+        }
     }
 }

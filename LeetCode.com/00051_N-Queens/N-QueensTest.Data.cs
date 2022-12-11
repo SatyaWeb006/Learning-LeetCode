@@ -37,6 +37,36 @@ namespace LeetCode.com._00051_N_Queens
 
         #endregion
 
+        
+        #region 答案測試
+
+        static IEnumerable<TestCaseData> QueensExclusionArea
+        {
+            get
+            {
+                yield return
+                    new TestCaseData("1,1", new List<string>()
+                    {
+                        "1,1","1,2","1,3","1,4",
+                        "2,1","2,2",
+                        "3,1",
+                        "4,1"
+                    });
+                
+                yield return
+                    new TestCaseData("2,3", new List<string>()
+                    {
+                        
+                              "1,2","1,3","1,4",
+                        "2,1","2,2","2,3","2,4",
+                              "3,2","3,3","3,4",
+                        "4,1",      "4,3"
+                    });
+            }
+        }
+
+        #endregion
+        
         #region 棋盤繪製驗證
 
         static IEnumerable<TestCaseData> CreateCheckerBoard

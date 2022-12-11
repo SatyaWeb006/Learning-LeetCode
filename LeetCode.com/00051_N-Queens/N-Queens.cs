@@ -16,8 +16,9 @@ namespace LeetCode.com._00051_N_Queens
         /// <returns></returns>
         public static IList<IList<string>> SolveNQueens(int n)
         {
-            // 1. 使Dictionary來記錄所有可以放的空間。
-            // 2. 在每個Queen放下去後刪去被占據掉的點位。
+            // 1. 使Dictionary來記錄所有可以放的空間。 OK
+            // 2. 在每個Queen放下去後刪去被占據掉的點位；
+            //    不需要考慮後面的位置，因為會被前面的Queen卡死。
             // 3. 根據每個可以放的地方去餵Q不能放的結果並回傳資料
             // 4. 但有多種可能性，在同一列有兩個可能性的地方使用遞回去分析?
             // 5. 修正為，正確的結果可以直接反過來使用，但該怎麼紀錄使用？
@@ -45,6 +46,11 @@ namespace LeetCode.com._00051_N_Queens
             }
 
             return result;
+        }
+
+        public static Dictionary<string,bool> QueenPlacingExclusionArea(string place)
+        {
+            throw new NotImplementedException();
         }
     }
 }
